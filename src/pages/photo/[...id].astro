@@ -51,16 +51,16 @@ const nextPhoto = photos[photoIndex + 1]
         </p>
         <a
           class="content__item-link oh"
-          href="https://developer.chrome.com/docs/web-platform/view-transitions/"
+          href={photo?.extURL}
           target="_blank"
           rel="noopener"><span class="oh__inner">View more</span></a
         >
       </div>
     </div>
     <a href="/" class="back">
-      <svg viewBox="0 0 50 9" width="100%"
-        ><path d="M0 4.5l5-3M0 4.5l5 3M50 4.5h-77"></path></svg
-      >
+
+     Go Back Home
+
     </a>
     <MiniGrid currentPhotoId={photo?.id} />
   </div>
