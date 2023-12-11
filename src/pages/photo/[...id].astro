@@ -17,7 +17,7 @@ const prevPhoto = photos[photoIndex - 1]
 const nextPhoto = photos[photoIndex + 1]
 ---
 
-<Layout title="Astro + View Transitions Photo Gallery">
+<Layout title="Cesal Design">
   <div class="content">
     <div class="content__item" id="item-1">
       <nav class="slide-nav">
@@ -40,26 +40,25 @@ const nextPhoto = photos[photoIndex + 1]
       </nav>
 
       <div transition:name={`photo-details-${photo?.id}`}>
-        <span class="content__item-number oh"
+        <!-- <span class="content__item-number oh"
           ><span class="oh__inner">{photoNumber}</span></span
-        >
+        > -->
         <h2 class="content__item-heading oh">
           <span class="oh__inner">{photo?.title}</span>
         </h2>
         <p class="content__item-text">
           {photo?.description}
         </p>
-        <a
+        <!-- <a
           class="content__item-link oh"
-          href={photo?.extURL}
           target="_blank"
           rel="noopener"><span class="oh__inner">View more</span></a
         >
-      </div>
+      </div> -->
     </div>
     <a href="/" class="back">
 
-     Go Back Home
+     ⇠ Back
 
     </a>
     <MiniGrid currentPhotoId={photo?.id} />

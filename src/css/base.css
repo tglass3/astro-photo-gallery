@@ -11,13 +11,12 @@
 body {
   margin: 0;
   --color-text: #6B390C;
-  --color-bg: #f7f5ee;
-  --color-link: #000;
-  --color-link-hover: #000;
+  --color-bg: #FCF8F4;
+  --color-link: #D0A277;
+  --color-link-hover: #99A002;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: rustica, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-    Arial, sans-serif;
+  font-family: 'Zodiak';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -27,8 +26,10 @@ body {
 
 a {
   text-decoration: none;
+  font-family: 'Josefin Slab';
+  font-size: large;
   color: var(--color-link);
-  outline: none;
+  outline: 10px;
   font-weight: 600;
 }
 
@@ -67,7 +68,7 @@ a:focus-visible {
 }
 
 .oh {
-  overflow: hidden;
+  overflow: show;
 }
 
 .oh__inner {
@@ -134,8 +135,8 @@ a:focus-visible {
 .grid--mini {
   --grid-padding: 1px;
 
-  width: 235px;
-  max-height: 190px;
+  width: 295px;
+  max-height: 300px;
   margin-bottom: 3vh;
   display: none;
   position: absolute;
@@ -180,7 +181,7 @@ a:focus-visible {
 
 .content {
   position: fixed;
-  top: 0;
+  top: -50px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -203,25 +204,29 @@ a:focus-visible {
 }
 
 .content__item-number {
+  font-family: 'Josefin Slab';
+  color: #D0A277;
   font-weight: 600;
   display: block;
 }
 
 .content__item-heading {
+  font-family: 'Alpino-Black';
   font-size: 4vw;
   line-height: 1;
-  margin: 1rem 0 3rem 0;
+  margin: 0 0 3rem 0;
   font-weight: 600;
 }
 
 .content__item-text {
   max-width: 30ch;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   line-height: 1.3;
 }
 
 .content__item-link {
   cursor: pointer;
+  font-weight: 600;
 }
 
 .slide-nav {
@@ -284,7 +289,7 @@ a:focus-visible {
   stroke: #000;
   z-index: 1000;
   cursor: pointer;
-  width: 50px;
+  width: 70px;
 }
 
 .back svg {
@@ -307,6 +312,7 @@ a:focus-visible {
   }
   .grid {
     grid-template-columns: repeat(4, 25%);
+    
   }
   .grid__cell--padded {
     padding: var(--grid-padding);
@@ -380,7 +386,7 @@ a:focus-visible {
   }
 
   .slide-nav__main-img {
-    border-radius: 18px;
+    border-radius: 50px;
   }
 }
 
